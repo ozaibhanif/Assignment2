@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+function addParagraph(text) {
+  // create a new paragraph element
+  const newParagraph = document.createElement("p");
+  
+  // set the text content of the new paragraph
+  newParagraph.textContent = text;
+
+  // find the body element of the document
+  const body = document.querySelector("body");
+
+  // add the new paragraph to the end of the body
+  body.appendChild(newParagraph);
+}
+
+
+addParagraph("This is some text for the new paragraph.");
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function addNumber(num) {
+  return function(value) {
+    return value + num;
+  }
+}
+const addFive = addNumber(5);
+console.log(addFive(10)); // Output: 15
+console.log(addFive(25)); // Output: 30
+
+    </script>
+    
+</body>
+</html>

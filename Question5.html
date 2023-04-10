@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myDiv">Background color change when click in button:</div>
+        <button onclick="changeBackgroundColor(document.getElementById('myDiv'), 'red')">Change background color to red</button>
+        <button onclick="changeBackgroundColor(document.getElementById('myDiv'), 'blue')">Change background color to blue</button>
+
+
+        <script>
+            function changeBackgroundColor(element, color) {
+            element.style.backgroundColor = color;
+}
+
+
+        </script>
+</body>
+</html>

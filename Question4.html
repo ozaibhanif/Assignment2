@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function addListItem(text) {
+  // get the unordered list element by its id
+  let list = document.getElementById("myList");
+
+  // create a new list item element
+  let newItem = document.createElement("li");
+
+  // set the text content of the new item to the string argument passed in
+  newItem.textContent = text;
+
+  // add the new item to the end of the list
+  list.appendChild(newItem);
+}
+
+    </script>
+    
+</body>
+</html>

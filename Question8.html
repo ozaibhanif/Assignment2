@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function saveObjectToLocalStorage(obj) {
+  for (let prop in obj) {
+    localStorage.setItem(prop, obj[prop]);
+  }
+  const newObj = {};
+  for (let i = 0; i < localStorage.length; i++) {
+    const key = localStorage.key(i);
+    newObj[key] = localStorage.getItem(key);
+  }
+  return newObj;
+}
+
+
+const myObj = {
+  name: "Ozaib",
+  age: 26,
+  city: "Karachi"
+}
+
+const retrievedObj = saveObjectToLocalStorage(myObj);
+console.log(retrievedObj);
+
+    </script>
+</body>
+</html>
